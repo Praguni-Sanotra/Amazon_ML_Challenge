@@ -139,3 +139,17 @@ entity_unit_map = {
   }
 }
 ```
+## Amazon ML Challenge : ML Hackathon
+Team Name : Instant Ideators 
+
+## Proposed Solution to the Problem Statement -
+## ML Approach: 
+Using product photos and associated language attributes, our project attempts to predict entity values (e.g., weight, dimensions). The method starts with preparing the text fields (product entity names and group categories) and downloading product images via URLs. We put in place a hybrid feature extraction procedure in which visual features are extracted from images and text is tokenised and normalised. Combining these characteristics allowed for the training of machine learning models that could forecast the value of the target item.
+
+## ML Models Used: 
+Because the data was unstructured, we used Convolutional Neural Networks (CNNs) to extract features from product photos. Entity names for the structured text fields were converted into numerical representations using Word2Vec and TF-IDF methods. To determine the most effective method for combining text and image information, a number of machine learning models, such as Random Forest, XGBoost, and linear regression models, were tested. These models were trained to forecast entity values that were prepared in accordance with the output specifications.
+Experiments: We tested a number of model designs and tuning techniques during the experimental phase. For improved feature extraction from pictures, CNN architectures were optimised, and grid search was used to adjust the hyperparameters of tree-based models such as XGBoost. To make sure the model was generalisable, cross-validation was done. Predictions were evaluated with the F1 score, which is a crucial parameter for classifying and entity extraction tasks. Sanity tests were also performed to make sure the final outputs had the right amount of predictions and followed the prescribed format. 
+
+## Conclusion:
+ Based on the F1 score, the final model performed the best since it combined text and image features. The model handled situations when lacking data necessitated producing empty strings by striking a balance between recall and precision. Getting the best evaluation score possible required accurately formatting the predictions. This research showed how entity value prediction issues may be successfully handled by hybrid modelling, which combines text field feature engineering and CNN-based picture analysis. 
+
