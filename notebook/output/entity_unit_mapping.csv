@@ -1,0 +1,9 @@
+entity_name,unit
+depth,centimetre
+height,centimetre
+item_volume,millilitre
+item_weight,gram
+maximum_weight_recommendation,kilogram
+voltage,volt
+wattage,watt
+width,centimetre

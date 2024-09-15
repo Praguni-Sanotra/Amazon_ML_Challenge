@@ -2,8 +2,8 @@ import pandas as pd
 import argparse
 import re
 import os
-import constants
-from utils import parse_string
+import src.constants as constants
+from src.utils import parse_string
 
 def check_file(filename):
     if not filename.lower().endswith('.csv'):
